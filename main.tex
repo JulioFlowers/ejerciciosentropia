@@ -1,0 +1,133 @@
+\documentclass[a4paper,11pt]{extarticle} %este tipo de doc ofrece más tamaños de letra
+
+\usepackage[utf8]{inputenc}%codificación
+\usepackage{csquotes}
+\usepackage[spanish, mexico]{babel}%Paquete de caracteres y títulos en español de méxico
+
+\usepackage{amsmath, mathtools}%Paquete para insertar símbolos matemáticos
+\usepackage[bitstream-charter]{mathdesign}
+\usepackage{textcomp}
+\usepackage{textcomp,gensymb}
+\usepackage[table,xcdraw, dvipsnames]{xcolor}
+\usepackage{fontenc}
+
+\usepackage[shortlabels]{enumitem}
+
+\usepackage[tmargin= 2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm]{geometry}
+
+%estos son para tablas y figuras
+\usepackage{float}%Paquete para tratar figuras y tablas como flotantes
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{physics}
+
+\usepackage{verbatim}%comentarios en bloque
+
+\captionsetup{font=footnotesize,labelfont=footnotesize} % hace al caption mas chiquito
+
+%convierte los cuadros del caption en tablas
+\renewcommand{\listtablename}{Índice de tablas}
+\renewcommand{\tablename}{Tabla}
+
+% si quieren usar alfabeto griego sin entrar en mathmode
+\usepackage{textgreek}
+
+\usepackage{adjustbox} % para ajustar tablas
+
+\usepackage{url}%Paquete para insertar URL's
+\usepackage{hyperref}
+
+\usepackage{multicol}%Paquete para crear ambientes multicolumna
+\setlength\columnsep{16pt}%Especifíca separación de las columnas
+
+%este es para la bibliografía yo uso ieee pero se puede cambiar
+%\usepackage[
+%backend=biber,
+%bibencoding=utf8,
+%style=ieee,
+%sorting=none
+%]{biblatex}
+%\addbibresource{tarea2-maf.bib}
+
+
+% otros nuevos comandos personalizados.
+%\newcommand{\dbar} {\ensuremath{\,\mathchar'26\mkern-12mu d}}
+
+ \newcommand{\cita}[1]{\textsuperscript{\textbf{\cite{#1}}}} % este es para que la cita se vea en superíndice para ieee, si usan otro formato bórrenlo
+ \newcommand{\ut}[1]{\textbf{#1}} %les hace escribir menos si quieren poner negritas en texto y mate
+ \newcommand{\um}[1]{\mathbf{#1}}
+ \renewcommand{\thefootnote}{\Roman{footnote}} %los pie de pagina los pone en letras romanas
+ \newcommand{\dbar}{\text{\dj}}
+ 
+\begin{document}
+
+% TITULO ------------------------------------------------------------------------
+
+\begin{center}
+
+    \Large{\textbf{Ejercicios Entropía.}}
+
+    %--------------------------------------------------------------------------------
+
+    % INFO CONTACTO -----------------------------------------------------------------
+
+    \vspace{0.35em}
+
+    \urlstyle{same}
+    \small{\textbf{ Pérez Flores Julio Alfonso,}
+        \textit{\href{mailto:julio_ perez@ciencias.unam.mx}{julio\textunderscore perez@ciencias.unam.mx}}} \linebreak
+    \small{\textbf{ Méndez Martínez Yuvia Libertad,}
+        \textit{\href{mailto:yuviali1614@ciencias.unam.mx}{yuviali1614@ciencias.unam.mx}}} \linebreak
+    \textit{\small{Facultad de Ciencias, Universidad Nacional Autónoma de México. }}
+
+    \vspace{0.65em}
+
+    \small{ 25 de Marzo, 2023.}
+
+\end{center}
+
+
+\begin{enumerate}[label=\textbf{\arabic*}), leftmargin=*]
+
+    %==================================================================%
+    % Ejercicio 1
+    %==================================================================%
+    \item{
+                \begin{enumerate}[label=\textbf{\alph* )}]
+                    \item Dibuje el diagrama \ut{T -S } de un clico de Carnot
+                    \item {Determine la eficiencia de un ciclo de Carnot usando el diagrama
+                          \ut{T - S} de \ut{a)}}.
+                \end{enumerate}
+          }
+
+    \vspace{\baselineskip}
+
+    \input{ejercicios/ejercicio1.tex}
+
+    \vspace{\baselineskip}
+
+    %==================================================================%
+    % Ejercicio 2
+    %==================================================================%
+    \item{Un recipiente con N moles de gas ideal con un volumen inicial V\textsubscript{i} esta en contacto con un
+          depósito de calor T\textsubscript{0} \ut{K}. El gas se expande a un volumen V\textsubscript{f}. Calcular:
+
+                \begin{enumerate}[label=\textbf{\alph* )}]
+                    \item La cantidad de gas absorbido por el gas en esta expansión.
+                    \item El aumento en la Entropía del gas.
+                \end{enumerate}
+          }
+
+    \vspace{\baselineskip}
+
+    \input{ejercicios/ejercicio2.tex}
+
+    \vspace{\baselineskip}
+
+\end{enumerate}
+
+%\printbibliography[title={Referencias.}]
+
+\end{document}
