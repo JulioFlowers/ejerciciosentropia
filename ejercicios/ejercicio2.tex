@@ -1,29 +1,16 @@
 
-Se puede apreciar que el gas al ser expandido isotérmicamente sufrió un proceso reversible, esto debido a que
-conocemos el camino por el cual llego a esa diferencia de volúmenes.
+Podemos apreciar que este sistema se encuentra a una presión constante
+pues se ebulle a presión atmosférica por lo tanto podemos aprovechar 
+la definición de C\textsubscript{p}.
 
-\begin{enumerate}[label=\textbf{\alph* )}]
-    \item{De la primer ley de la termodinámica, tenemos para una isoterma que:
-    
-    \begin{gather*}
-        \Delta U\ =\ 0\ \ \ \Rightarrow\\
-        Q\ =\ -W\ \ \ \therefore\\
-        \\
-        Q\ =\ \int_{V_{i}}^{V_{f}} p\ dV\ =\ nRT_{i} \int_{V_{i}}^{V_{f}} \frac{1}{V}\ dV\ =\ 
-        \boxed{nRT_{i} \ln{\left(\frac{V_{f}}{V_{i}}\right)}}
-    \end{gather*}
-     } 
-
-    \item{ al ser un proceso reversible tenemos la siguiente relación 
-    
-    \begin{equation}
-        \int \frac{dQ}{T}\ =\ \int dS\ \ \ \Rightarrow\ \ \  \Delta S\ =\ \frac{Q}{T}
-    \end{equation}
-    
-    Como tenemos un proceso isotérmico 
-
-    \begin{equation*}   
-        \boxed{\Delta S\ =\ nR\ln{\left(\frac{V_{f}}{V_{i}}\right)}}
-    \end{equation*}
-    }
-\end{enumerate}
+\begin{gather*}
+    C_{p}\ =\ \frac{\dbar Q_{p}}{mdT}\ \ \ \Rightarrow\ \ \
+    \dbar Q_{p}\ =\ mC_{p}dT\ \ \ \Rightarrow\\
+    dS_{p}\ =\ \frac{mC_{p}}{T}\ dT\ \ \ \therefore\\
+    \\
+    \Delta S\ = mC_{p} \int_{273.15\ \um{K}}^{373.15\ \um{K}}\ \frac{1}{T}\ dT\ =\
+    mC_{p} \ln{\left(\frac{373.15\ \um{K}}{273.15\ \um{K}}\right)}\\ 
+    \\
+    \shortintertext{utilizando el valor de C\textsubscript{p} registrado por Engineering ToolBox\cita{Engineering}}
+    \approx \ 1\ kg\ 4.216 \left[\frac{kJ}{K\ kg}\right] 0.312\ =\ \boxed{1.315\ \um{kJ\ K^{-1}}}
+\end{gather*}

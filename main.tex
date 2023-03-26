@@ -43,13 +43,13 @@
 \setlength\columnsep{16pt}%Especifíca separación de las columnas
 
 %este es para la bibliografía yo uso ieee pero se puede cambiar
-%\usepackage[
-%backend=biber,
-%bibencoding=utf8,
-%style=ieee,
-%sorting=none
-%]{biblatex}
-%\addbibresource{tarea2-maf.bib}
+\usepackage[
+backend=biber,
+bibencoding=utf8,
+style=ieee,
+sorting=none
+]{biblatex}
+\addbibresource{tarea2entro.bib}
 
 
 % otros nuevos comandos personalizados.
@@ -94,13 +94,8 @@
     %==================================================================%
     % Ejercicio 1
     %==================================================================%
-    \item{
-                \begin{enumerate}[label=\textbf{\alph* )}]
-                    \item Dibuje el diagrama \ut{T -S } de un clico de Carnot
-                    \item {Determine la eficiencia de un ciclo de Carnot usando el diagrama
-                          \ut{T - S} de \ut{a)}}.
-                \end{enumerate}
-          }
+
+    \item Al efectuar una expansión adiabática y reversible de un gas ¿Cuál es la variación de entropía?
 
     \vspace{\baselineskip}
 
@@ -111,21 +106,52 @@
     %==================================================================%
     % Ejercicio 2
     %==================================================================%
-    \item{Un recipiente con N moles de gas ideal con un volumen inicial V\textsubscript{i} esta en contacto con un
-          depósito de calor T\textsubscript{0} \ut{K}. El gas se expande isotérmicamente a un volumen V\textsubscript{f}. Calcular:
 
-                \begin{enumerate}[label=\textbf{\alph* )}]
-                    \item La cantidad de gas absorbido por el gas en esta expansión.
-                    \item El aumento en la Entropía del gas.
-                \end{enumerate}
-    }
+    \item{ 1 \ut{kg} de agua se encuentra a 0 \ut{°C} y se calienta hasta 100 \ut{°C}. Calcúlese la variación
+                de entropía
+          }
+
+    \vspace{\baselineskip}
 
     \input{ejercicios/ejercicio2.tex}
 
     \vspace{\baselineskip}
 
+    %==================================================================%
+    % Ejercicio 3
+    %==================================================================%
+    \item{
+                \begin{enumerate}[label=\textbf{\alph* )}]
+                    \item Dibuje el diagrama \ut{T -S } de un clico de Carnot
+                    \item {Determine la eficiencia de un ciclo de Carnot usando el diagrama
+                          \ut{T - S} de \ut{a)}}.
+                \end{enumerate}
+          }
+
+    \vspace{\baselineskip}
+
+    \input{ejercicios/ejercicio3.tex}
+
+    \vspace{\baselineskip}
+
+    %==================================================================%
+    % Ejercicio 4
+    %==================================================================%
+    \item{Un recipiente con N moles de gas ideal con un volumen inicial V\textsubscript{i} esta en contacto con un
+                depósito de calor T\textsubscript{0} \ut{K}. El gas se expande isotérmicamente a un volumen V\textsubscript{f}. Calcular:
+
+                \begin{enumerate}[label=\textbf{\alph* )}]
+                    \item La cantidad de gas absorbido por el gas en esta expansión.
+                    \item El aumento en la Entropía del gas.
+                \end{enumerate}
+          }
+
+    \input{ejercicios/ejercicio4.tex}
+
+    \vspace{\baselineskip}
+
 \end{enumerate}
 
-%\printbibliography[title={Referencias.}]
+\printbibliography[title={Referencias.}]
 
 \end{document}
